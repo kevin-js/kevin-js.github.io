@@ -1,3 +1,13 @@
+@font-face {
+	font-family: bronx-bystreets;
+	src: url('../misc/bronx-bystreets.ttf');
+}
+
+@font-face {
+	font-family: throwupz;
+	src: url('../misc/throwupz.ttf');
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -8,7 +18,6 @@ body {
 	background-image: url('../img/venezia.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: fixed;
 	margin: 0px;
 	padding: 0px;
 }
@@ -24,15 +33,33 @@ body {
 	border: 1px solid black;
 }
 
+#name {
+	font-family: throwupz;
+	font-size: 4em;
+}
+
+#name:hover {
+	text-decoration: none;
+}
+
 #splash {
 	min-height: 90vh;
 }
 
-#temp {
-	font-size: 4em;
-	margin-top: 20vh;
-	color: #eeeeee;
+#construction {
+	background-image: url('../img/construction.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
 }
+
+#temp {
+	font-family: bronx-bystreets;
+	font-size: 3.5em;
+	margin-top: 20vh;
+	color: #ffffff;
+	
+}
+
 #music-player {
 	margin-bottom: 1vh;
 }
@@ -40,6 +67,7 @@ body {
 #about {
 	color: #ffffff;
 }
+
 #contact {
 	min-height: 50vh;
 	max-height: 100vh;

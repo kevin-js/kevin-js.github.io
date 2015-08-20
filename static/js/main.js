@@ -8,6 +8,16 @@ $(document).ready(function(){
 		document.getElementsByTagName('body')[0].style.backgroundImage = 'url(static/img/' + currentimg + ')';
 	}, 5000);
 	
+	var lastScroll = 0;
+	$(window).scroll(function(event){
+		var currScroll = $(this).scrollTop();
+		if(currScroll < lastScroll){
+			$('#my-nav').slideDown(200);
+		}else{
+			$('#my-nav').slideUp(200);
+		}
+		lastScroll = currScroll;
+	});
 });
 
 function submitForm(){
