@@ -69,13 +69,12 @@ body {
 }
 
 #contact {
-	min-height: 50vh;
-	max-height: 100vh;
 	color: #ffffff;
+	background-color: rgba(34, 34, 34, 1);
 }
 
 #contact-form {
-	color: #aaaaaa;
+	background-color: rgba(34, 34, 34, 0.25);
 }
 
 .form-item {
@@ -91,7 +90,7 @@ footer {
 	line-height: 10vh;
 	padding-top: 5px;
 	background-color: rgb(34, 34, 34);
-	border: 1px solid black;
+	border: 1px solid #1f1f1f;
 	box-sizing: border-box;
 	clear: both;
 }
