@@ -1,0 +1,77 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: menlo;
+	background-image: url('../img/venezia.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+	margin: 0px;
+	padding: 0px;
+}
+.section-break {
+	margin-bottom: 15vh;
+}
+
+#my-nav {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-bottom: 0;
+	background-color: rgba(34, 34, 34, 0.25);
+	border: 1px solid black;
+}
+
+#splash {
+	min-height: 90vh;
+}
+
+#temp {
+	font-size: 4em;
+	margin-top: 20vh;
+	color: #eeeeee;
+}
+#music-player {
+	margin-bottom: 1vh;
+}
+
+#about {
+	color: #ffffff;
+}
+#contact {
+	min-height: 50vh;
+	max-height: 100vh;
+	color: #ffffff;
+}
+
+#contact-form {
+	color: #aaaaaa;
+}
+
+.form-item {
+	margin-bottom: 12px;
+}
+
+#thank-you {
+	text-align: left;
+	display: none;
+}
+
+footer {
+	line-height: 10vh;
+	padding-top: 5px;
+	background-color: rgb(34, 34, 34);
+	border: 1px solid black;
+	box-sizing: border-box;
+	clear: both;
+}
+
+footer a {
+	margin: auto;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
