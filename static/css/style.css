@@ -8,34 +8,71 @@
 	src: url('../misc/throwupz.ttf');
 }
 
+.header-font {
+	color: #ffffff;
+	font-family: bronx-bystreets;
+	font-size: 6em;
+}
+
+.header-font-alt {
+	color: #ffffff;
+	font-family: throwupz;
+	font-size: 8em;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
 }
 
+html {
+
+}
+
 body {
 	font-family: menlo;
-	background-image: url('../img/venezia.jpg');
+	background-color: #120E0B;
+	background-image: url('../img/malibu.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0px;
 	padding: 0px;
 }
+
+p {
+	text-align: left;
+	font-family: menlo;
+}
+
+#background-container {
+
+}
+
 .section-break {
 	margin-bottom: 15vh;
 }
 
 #my-nav {
+	font-family: throwupz;
+	font-size: 4em;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	margin-bottom: 0;
-	background-color: rgba(34, 34, 34, 0.25);
+	background-color: rgba(34, 34, 34, 0.4);
 	border: 1px solid black;
+}
+
+#toolbar-list {
+	padding-top: 15px;
+}
+
+#toolbar-list > li {
+	color: #ffffff;
+	margin: 0 10px 0 10px;
 }
 
 #name {
 	font-family: throwupz;
-	font-size: 4em;
 }
 
 #name:hover {
@@ -43,29 +80,58 @@ body {
 }
 
 #splash {
-	min-height: 90vh;
+	min-height: 100vh;
 }
 
-#construction {
-	background-image: url('../img/construction.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
+#pushdown {
+	margin-top: 25%;
 }
 
-#temp {
-	font-family: bronx-bystreets;
-	font-size: 3.5em;
-	margin-top: 20vh;
+#hello {
 	color: #ffffff;
+	font-size: 2.5em;
+	font-family: menlo;
+}
+
+#splash-header {
 	
 }
 
-#music-player {
-	margin-bottom: 1vh;
+#scrolldown-button {
+	padding: 0 35% 0 35%;
+	width: 100%;
 }
+
 
 #about {
 	color: #ffffff;
+	border-top: 1px solid black;
+	background: -webkit-linear-gradient(left, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(34,34,34,0), rgba(34,34,34,0.8));
+}
+
+#engineering {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#music {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#adventure {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#work {
+	background: -webkit-linear-gradient(left, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(34,34,34,0), rgba(34,34,34,0.8));
 }
 
 #contact {
@@ -101,4 +167,28 @@ footer a {
 
 footer a:hover {
 	text-decoration: none;
+}
+
+.typed-cursor{
+	color: #ffffff;
+	font-size: 2.5em;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

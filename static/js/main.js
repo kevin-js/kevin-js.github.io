@@ -1,12 +1,23 @@
 $(document).ready(function(){
-	var imgs = ['canals.jpg', 'malibu.jpg', 'cinqueterre.jpg', 'pompeii.jpg', 'venezia.jpg'];
+	$('#my-nav').hide();
+	$('#splash-header').hide();
+	$('#scroll-down').hide();
+	$(function(){
+		$('#hello').typed({
+			strings: ['Hey there!', 'Welcome to my little corner of the internet.', 'Here, you can learn about me and check out my portfolio, resume, and hobbies.', 'Enjoy!'],
+			typeSpeed: 50
+		});
+	});
+
+	var imgs = ['cinqueterre.jpg', 'malibu.jpg', 'canals.jpg', 'venezia.jpg', 'pompeii.jpg'];
 	var i = 0;
 
 	var timer = setInterval(function(){
+		clearInterval(timer);
 		i++;
 		var currentimg = imgs[i % imgs.length];
 		document.getElementsByTagName('body')[0].style.backgroundImage = 'url(static/img/' + currentimg + ')';
-	}, 5000);
+	}, 30000);
 	
 	var lastScroll = 0;
 	$(window).scroll(function(event){
@@ -19,7 +30,3 @@ $(document).ready(function(){
 		lastScroll = currScroll;
 	});
 });
-
-function submitForm(){
-	var myForm = document.getElementById('contact-form');
-}
