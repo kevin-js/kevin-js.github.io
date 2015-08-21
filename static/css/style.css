@@ -8,6 +8,11 @@
 	src: url('../misc/trench100free.otf');
 }
 
+@font-face {
+	font-family: menlo;
+	src: url('../misc/Menlo-Regular.woff');
+}
+
 .header-font {
 	color: #ffffff;
 	font-family: bronx-bystreets;
@@ -30,15 +35,14 @@ html, body {
 }
 
 body {
-	font-family: trench;
-	font-size: 1.5em;
+	font-family: 'raleway', helvetica;
 	margin: 0px;
 	padding: 0px;
 }
 
 p {
 	text-align: left;
-	font-family: trench;
+	font-family: 'raleway', helvetica;
 	font-size: 1em;
 }
 
@@ -73,6 +77,7 @@ p {
 
 #name {
 	font-family: trench;
+	padding-left: 10px;
 }
 
 #name:hover {
@@ -94,22 +99,27 @@ p {
 }
 
 #splash-header {
-	
+	font-size: 6em;
 }
 
+
 #scrolldown-button {
-	padding: 0 35% 0 35%;
+	margin-top: 100%;
+	padding: 0 40% 0 40%;
 	width: 100%;
 }
 
 
 #about {
 	color: #ffffff;
-	//border-top: 1px solid black;
 	background: -webkit-linear-gradient(top, rgba(34,34,34,0), rgba(34,34,34,1)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom, rgba(34,34,34,0), rgba(34,34,34,1)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom, rgba(34,34,34,0), rgba(34,34,34,1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom, rgba(34,34,34,0), rgba(34,34,34,1));
+}
+
+#about p {
+	text-align: justify;
 }
 
 #engineering {
@@ -133,6 +143,7 @@ p {
 
 #portfolio-header {
 	margin-top: 50px;
+	font-family: trench;
 }
 
 #contact {
