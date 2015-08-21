@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#my-nav').hide();
 	$('#splash-header').hide();
-	$('#scroll-down').hide();
+	//$('#scroll-down').hide();
 	$(function(){
 		$('#hello').typed({
 			strings: ['Hey there!', 'Welcome to my little corner of the internet.', 'Here, you can learn about me and check out my portfolio, resume, and hobbies.', 'Enjoy!'],
