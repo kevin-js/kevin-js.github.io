@@ -26,7 +26,7 @@ html, body {
 }
 
 html {
-
+	background-color: #120E0B;
 }
 
 body {
@@ -45,7 +45,9 @@ p {
 }
 
 #background-container {
-
+	background-image: url('../img/malibu.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .section-break {
@@ -132,6 +134,10 @@ p {
     background: -o-linear-gradient(right, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, rgba(34,34,34,0), rgba(34,34,34,0.8)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, rgba(34,34,34,0), rgba(34,34,34,0.8));
+}
+
+#portfolio-header {
+	margin-top: 50px;
 }
 
 #contact {

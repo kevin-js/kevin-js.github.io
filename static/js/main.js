@@ -29,4 +29,11 @@ $(document).ready(function(){
 		}
 		lastScroll = currScroll;
 	});
+
+	$('#scrolldown-button').click(function(){
+		$('body,html').animate({
+			scrollTop: $('#about').offset().top
+		});
+		$('#scrolldown-button').hide();	
+	});
 });
