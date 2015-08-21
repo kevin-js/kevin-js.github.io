@@ -52,10 +52,6 @@ p {
 	background-size: cover;
 }
 
-.section-break {
-	margin-bottom: 15vh;
-}
-
 #my-nav {
 	font-family: trench;
 	font-size: 4em;
@@ -149,19 +145,6 @@ p {
 #contact {
 	color: #ffffff;
 	background-color: rgba(34, 34, 34, 1);
-}
-
-#contact-form {
-	background-color: rgba(34, 34, 34, 0.25);
-}
-
-.form-item {
-	margin-bottom: 12px;
-}
-
-#thank-you {
-	text-align: left;
-	display: none;
 }
 
 footer {
