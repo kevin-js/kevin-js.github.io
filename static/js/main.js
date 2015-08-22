@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('#scroll-down').hide();
 	$(function(){
 		$('#hello').typed({
-			strings: ['Hey there!', 'Welcome to my little corner of the internet.', 'Here, you can learn about who I am and check out my portfolio, resume, and hobbies.', 'Enjoy!'],
+			strings: ['Hey there!', 'Welcome to my little corner of the internet.', 'Here, you can learn a bit about me and check out my portfolio, resume, and hobbies.', 'Enjoy!'],
 			startDelay: 2000,
 			typeSpeed: 20,
 		});
