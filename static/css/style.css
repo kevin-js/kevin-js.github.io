@@ -46,12 +46,6 @@ p {
 	font-size: 1em;
 }
 
-@media(max-width: 400px) {
-	.text-block {
-		padding: 0 20% 0 20%;
-	}
-}
-
 iframe {
 	border: 0px;
 }
