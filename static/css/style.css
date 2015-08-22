@@ -46,6 +46,10 @@ p {
 	font-size: 1em;
 }
 
+iframe {
+	border: 0px;
+}
+
 #background-container {
 	background-image: url('../img/malibu.jpg');
 	background-repeat: no-repeat;
@@ -140,6 +144,35 @@ p {
 #portfolio-header {
 	margin-top: 50px;
 	font-family: trench;
+}
+
+#resume-download:hover {
+	text-decoration: none;
+}
+
+#myCarousel {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.carousel-header {
+	font-size: 5em;
+	text-align: center;
+}
+
+.carousel-inner a:hover {
+	text-decoration: none;
+}
+
+.my-carousel-item {
+	width: 80%;
+	height: 75vh;
+	vertical-align: middle;
+	overflow: scroll;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background: none !important;
 }
 
 #contact {

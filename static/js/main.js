@@ -9,16 +9,6 @@ $(document).ready(function(){
 
 		});
 	});
-
-	var imgs = ['cinqueterre.jpg', 'malibu.jpg', 'canals.jpg', 'venezia.jpg', 'pompeii.jpg'];
-	var i = 0;
-
-	var timer = setInterval(function(){
-		clearInterval(timer);
-		i++;
-		var currentimg = imgs[i % imgs.length];
-		document.getElementsByTagName('body')[0].style.backgroundImage = 'url(static/img/' + currentimg + ')';
-	}, 30000);
 	
 	var lastScroll = 0;
 	$(window).scroll(function(event){
