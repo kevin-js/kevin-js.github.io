@@ -15,6 +15,7 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-66625129-1', 'auto');ga('send', 'pageview');</script>
 </head>
 <body>
 <nav id="my-nav" class="navbar navbar-default navbar-inverse navbar-fixed-top">
@@ -67,7 +68,7 @@
           <br />
           <div class="row">
             <div class="col-md-offset-1 col-md-10">
-              <p >Growing up as the son of an architect and a structural engineering professor, I was very much immersed in a building environment (literally and figuratively) and still bear much of that culture with me to this day. There is some fundamental beauty in making something out of nothing, be it a skyscraper or website, and in the process of discovery and creation. As a founder and director of HackDartmouth, the student-run hackathon program at Dartmouth College, I seek to share this passion for building with my peers by bringing students, mentors, and sponsors from around the world to work on innovative projects together. And now, for a shameless plug: if you or anyone you know would be interested in being a part of this program, please check out our site <a target="_blank" href="http://hackdartmouth.io/">here</a> and feel free to reach out to myself or our general team account.</p>
+              <p>Growing up as the son of an architect and a structural engineering professor, I was very much immersed in a building environment (literally and figuratively) and still bear much of that culture with me to this day. There is some fundamental beauty in making something out of nothing, be it a skyscraper or website, and in the process of discovery and creation. As a founder and director of HackDartmouth, the student-run hackathon program at Dartmouth College, I seek to share this passion for building with my peers by bringing students, mentors, and sponsors from around the world to work on innovative projects together. And now, for a shameless plug: if you or anyone you know would be interested in being a part of this program, please check out our site <a target="_blank" href="http://hackdartmouth.io/">here</a> and feel free to reach out to myself or our general team account.</p>
               <p>As much as for the creative aspect of engineering, I also enjoy building things because of the social component in teammwork. Oddly enough, some of my most vivid memories in college are of energy-drink and adrenaline fueled 4AM coding sessions with my teammates debating just how "lenient" we can be with our program features to get it turned in by the 10AM deadline. Ultimately, I see engineering as building with people for people and that is why I love it.</p>
             </div>
           </div>
@@ -110,26 +111,32 @@
       <h1 id="portfolio-header" class="header-font">My Portfolio</h1>
       <div class="row">
         <p style="font-family: raleway; color: #ffffff; text-align: center; margin-bottom: 40px">Download my resume <a id="resume-download" href="static/misc/Kevin Guh tech resume.pdf" download>here</a></p>
+        <p class="col-md-offset-1 col-md-10" style="font-family: raleway; color: #ffffff; text-align: center; margin-bottom: 40px">Note: To reduce loading time, the following images are only screen grabs, not iframes, so if you'd like to see the full interactive site, click on the project name and it will take you to its respective page.</p>
       </div>
-      <h6 class="header-font-alt" style="font-size: 4em">Interactive portfolio coming soon!</h6>
-      <!-- to do: implement carousel w/out multiple iframes, lag = bad -->
-<!--  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <a target="_blank" href="http://hackdartmouth-15s.herokuapp.com/"><p class="header-font-alt carousel-header">HackDartmouth Spring 2015</p></a>
-            <iframe class="my-carousel-item" src="http://hackdartmouth-15s.herokuapp.com/">
-              <p>Oops! It appears your browser does not support iframes.</p>
-            </iframe>
+            <div class="my-carousel-item">
+              <img class="carousel-img" src="static/img/hd_s2015.png">
+            </div>
           </div>
           <div class="item">
             <a target="_blank" href="http://hackdartmouth.io/"><h6 class="header-font-alt carousel-header">HackDartmouth II Fall 2015</h6></a>
-            <iframe class="my-carousel-item" src="http://hackdartmouth.io">
-              <p>Oops! It appears your browser does not support iframes.</p>
-            </iframe>
+            <div class="my-carousel-item">
+              <img class="carousel-img" src="static/img/hd_f2015.png">
+            </div>
+          </div>
+          <div class="item">
+            <a target="_blank" href="https://github.com/kgeezy93/FotoCloud"><h6 class="header-font-alt carousel-header">FotoCloud</h6></a>
+            <div class="my-carousel-item">
+              <h1 class="header-font" style="margin-top: 15%">Coming Soon!</h1>
+            </div>
           </div>
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -140,7 +147,7 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>-->
+      </div>
     </div>
   </section>
   <section id="contact" class="row">

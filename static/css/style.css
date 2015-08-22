@@ -72,7 +72,7 @@ iframe {
 
 #toolbar-list > li {
 	color: #ffffff;
-	margin: 0 10px 0 10px;
+	margin: 0 5px 0 5px;
 }
 
 #name {
@@ -165,10 +165,17 @@ iframe {
 }
 
 .my-carousel-item {
+	margin: auto;
 	width: 80%;
 	height: 75vh;
-	vertical-align: middle;
 	overflow: scroll;
+	border-radius: 5px;
+}
+
+.carousel-img {
+	margin: auto;
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 .carousel-control.left, .carousel-control.right {
