@@ -82,6 +82,7 @@ p {
 
 #splash {
 	min-height: 100vh;
+	border: 0px;
 }
 
 #pushdown {
@@ -89,6 +90,8 @@ p {
 }
 
 #hello {
+	white-space: pre-wrap;
+	word-wrap: break-word;
 	color: #ffffff;
 	font-size: 2.5em;
 	font-family: menlo;
@@ -107,6 +110,7 @@ p {
 
 
 #about {
+	border: 0px;
 	color: #ffffff;
 	background: -webkit-linear-gradient(top, rgba(34,34,34,0), rgba(34,34,34,0.7)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom, rgba(34,34,34,0), rgba(34,34,34,0.7)); /* For Opera 11.1 to 12.0 */
