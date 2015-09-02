@@ -1,2 +1,2 @@
 # mygithubpage
-Check it out at http://www.kevinguh.me!
+Check it out at http://kevinguh.me!
