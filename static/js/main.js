@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(function(){
 		$('#hello').typed({
 			strings: ['Hey there!', 'Welcome to my little corner of the internet.', 'Here, you can learn a bit about me and check out my portfolio, resume, and hobbies.', 'Enjoy!'],
-			startDelay: 2000,
+			startDelay: 2500,
 			typeSpeed: 20,
 		});
 	});
