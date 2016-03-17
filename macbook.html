@@ -1,21 +1,100 @@
-<!doctype html>
-<html>
-<head>
-  <title>Kevin Guh</title>
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-</head>
-<body>
-  <nav class="my-navbar">
-    <ul class="my-navbar-items">
-    </ul>
-  </nav>
-  <div id="layover" class="main-content">
-    <div id="exit"><a id="exit-button" href=""><img src="static/img/exit.png"></a></div>
-    <div>
-      <h1 style="margin: auto;">Coming Soon!</h1>
+<div id="layover" class="main-content">
+  <div id="exit"><a id="exit-button" href=""><img src="static/img/exit.png"></a></div>
+  <input type="text" id="search" placeholder="&#9906; Search Projects">
+  <div id="project-list">
+    
+    <div class="my-project" id="Sophist">
+      <div class="image-display"><img src="static/img/sophist.png"></div>
+      <div class="text-display">
+        <div class="project-name"><a target="_blank" href="http://mysophist.com/">Sophist</a></div>
+        <div class="description"><p>Tutoring on demand. When you need it, where you need it.</p></div>
+      </div>
+    </div>
+
+    <hr class="my-hr"/>
+
+    <div class="my-project" id="MoodifAI">
+      <div class="image-display"><img src="static/img/moodifai.png"></div>
+      <div class="text-display">
+        <div class="project-name"><a target="_blank" href="http://moodifai.herokuapp.com/">MoodifAI</a></div>
+        <div class="description"><p>Turn your Twitter feed into a music playlist.</p></div>
+      </div>
+    </div>
+
+    <hr class="my-hr"/>
+
+    <div class="my-project" id="MPesa">
+      <div class="image-display"><img src="static/img/default.png"></div>
+      <div class="text-display">
+        <div class="project-name">M-Pesa: A Mobile Route to Economic Security?</div>
+        <div class="description"><p>My culminating economics research paper studying the effects of the mobile payment service M-Pesa on mitigating the impact of idiosyncratic household economic shocks in Kenya. Available upon individual request.</p></div>
+      </div>
+    </div>
+
+    <hr class="my-hr" />
+
+    <div class="my-project" id="Hacker-Hotline">
+      <div class="image-display"><img src="static/img/default.png"></div>
+      <div class="text-display">
+        <div class="project-name"><a target="_blank" href="https://github.com/hackdartmouth/hacker-hotline">Hacker Hotline</a></div>
+        <div class="description"><p>A platform for mentor-mentee matching and remote mentorship at hackathons.</p></div>
+      </div>
+    </div>
+
+    <hr class="my-hr"/>
+
+    <div class="my-project" id="HackDartmouth2">
+      <div class="image-display"><img src="static/img/hackdartmouthii.png"></div>
+      <div class="text-display">
+        <div class="project-name"><a target="_blank" href="http://hackdartmouth.io/15f-site/">HackDartmouth II</a></div>
+        <div class="description"><p>Dartmouth College's second hackathon in 15F.</p></div>
+      </div>
+    </div>
+
+    <hr class="my-hr" />
+
+    <div class="my-project" id="HackDartmouth">
+      <div class="image-display"><img src="static/img/hackdartmouth.png"></div>
+      <div class="text-display">
+        <div class="project-name"><a target="_blank" href="http://hackdartmouth-15s.herokuapp.com/">HackDartmouth</a></div>
+        <div class="description"><p>Dartmouth College's inaugural hackathon in 15S.</p></div>
+      </div>
+    </div>
+
+    <hr class="my-hr"/>
+
+    <div class="my-project" id="DartSync">
+      <div class="image-display"><img src="static/img/default.png"></div>
+      <div class="text-display">
+        <div class="project-name">DartSync</div>
+        <div class="description"><p>A distributed, peer-to-peer file-sharing system.</p></div>
+      </div>
+    </div>
+
+    <hr class="my-hr" />
+    <div class="my-project" id="TinySearchEngine">
+      <div class="image-display"><img src="static/img/default.png"></div>
+      <div class="text-display">
+        <div class="project-name">TinySearchEngine</div>
+        <div class="description"><p>A Unix shell-based search engine.</p></div>
+      </div>
     </div>
   </div>
-</body>
-</html>
+</div>
+<script type="text/javascript">
+  $(function() {
+  var availableTags = [
+    'Sophist',
+    'MoodifAI',
+    'M-Pesa: A Mobile Route to Economic Security?',
+    'Hacker Hotline',
+    'HackDartmouth',
+    'HackDartmouth II',
+    'DartSync',
+    'TinySearchEngine'
+  ];
+  $('#search').autocomplete({
+    source: availableTags
+  });
+});
+</script>

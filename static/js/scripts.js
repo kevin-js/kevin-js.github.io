@@ -14,7 +14,15 @@ $(document).ready(function(){
 
 	$('#macbook-page').click(function(e){
 		e.preventDefault();
-		$('body').append(pages['macbook']);
+		$.ajax({
+			url : '/macbook.html',
+			success : function(html){
+				$('body').append(html);
+			},
+			error : function(error){
+				$('body').append('<div id="layover" class="main-content"><h1>Oops! Looks like something went wrong -- please try again!</h1><div id="exit"><a id="exit-button" href=""><img src="static/img/exit.png"></a></div></div>');
+			}
+		});
 	})
 
 	$('#headphones').click(function(e){
