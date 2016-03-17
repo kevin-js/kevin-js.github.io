@@ -13,9 +13,9 @@
 </div>
 <body>
 <div id="headline">
-	<div class="bar-item" id="cancel">Cancel</div>
+	<div class="bar-item" id="cancel"><a href="#" onclick="clearFields(event);">Cancel</a></div>
 	<div class="bar-item" id="label"><b>Contact</b></div>
-	<div class="bar-item" id="submit">Done</div>
+	<div class="bar-item" id="submit"><a href="#" onclick="sendMessage(event);">Done</a></div>
 </div>
 <hr />
 <div id="profile">
@@ -31,7 +31,7 @@
 <div id="message">
 	<div id="add-message">
 		<a href="#" onclick="showMessageBox(event);"><img src="static/img/add-button.png"></a>
-		<span style="color: #007aff;">add message</span>
+		<span style="color: #007aff;"><a href="#" onclick="showMessageBox(event);">add message</a></span>
 		<hr />
 	</div>
 	<div id="message-box">
@@ -71,6 +71,17 @@
 		}else {
 			alert(errorMessage['message']);
 		}
+	}
+
+	function clearFields(event){
+		event.preventDefault();
+		$('#firstname').val('');
+		$('#lastname').val('');
+		$('#email').val('');
+		$('#message-box-content').val('');
+		$('#message-box').slideUp(300, function(){
+			$('#add-message').slideDown(300);
+		});
 	}
 </script>
 </body>
