@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="static/css/inner-iphone.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -34,8 +35,7 @@
 		<hr />
 	</div>
 	<div id="message-box">
-		<textarea id="message-box-content" placeholder="Message:">
-		</textarea>
+		<textarea id="message-box-content" placeholder="Message:"></textarea>
 		<button onclick="sendMessage(event);">Send Message</button>
 	</div>
 </div>
@@ -53,7 +53,7 @@
 
 	function validateMessage(errorMessage){
 		var errmsg = 'O darn, one of those sneaky popups again! To make it go away, please leave your first name (last name optional), email, and a message so I can get back to you ASAP :)';
-		if($('#firstname').val().indexOf(/^[a-z0-9]+$/) < 0 || $('#email').val().indexOf(/^[a-z0-9]+$/) < 0 || $('#message-box-content').val().indexOf(/^[a-z0-9]+$/) < 0){
+		if($('#firstname').val().match(/[a-z0-9]+$/) == null || $('#email').val().match(/[a-z0-9]+$/) == null || $('#message-box-content').val().match(/[a-z0-9]+$/) == null){
 			errorMessage['message'] = errmsg;
 			return false;
 		}
