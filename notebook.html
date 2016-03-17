@@ -16,29 +16,17 @@
   <title>Kevin Guh</title>
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
-  <script type="text/javascript" src="static/js/scripts.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body>
-  <div id="instructions">
-    <img src="static/img/postit.png">
-  </div>
-  <div class="item" id="notebook">
-    <a id="notebook-page" href="#" onclick="createLayover(event, this.id)"><img src="static/img/books.png"></a>
-  </div>
-  <div class="item" id="macbook">
-    <a id="macbook-page" href="#"><img src="static/img/macbook.png"></a>
-  </div>
-  <div class="item" id="photo">
-    <a id="photo-page" href="#"><img src="static/img/polaroid.png"></a>
-  </div>
-  <div class="item" id="headphones">
-    <a id="headphones-page" href="#"><img src="static/img/headphones.png"></a>
-  </div>
-  <div class="item" id="phone">
-    <a id="phone-page" href="#"><img src="static/img/phone.png"></a>
-  </div>
-  <div class="item" id="coffee">
-    <a id="coffee-page" href="#"><img src="static/img/coffee.png"></a>
+  <nav class="my-navbar">
+    <ul class="my-navbar-items">
+    </ul>
+  </nav>
+  <div id="layover" class="main-content">
+    <div id="exit"><a id="exit-button" href=""><img src="static/img/exit.png"></a></div>
+    <div>
+    </div>
   </div>
 </body>
 </html>

@@ -1,303 +1,262 @@
 @font-face {
-	font-family: bronx-bystreets;
-	src: url('../misc/bronx-bystreets.ttf');
-}
-
-@font-face {
-	font-family: trench;
-	src: url('../misc/trench100free.otf');
-}
-
-@font-face {
-	font-family: menlo;
-	src: url('../misc/Menlo-Regular.woff');
-}
-
-.header-font {
-	color: #ffffff;
-	font-family: bronx-bystreets;
-	font-size: 6em;
-}
-
-.header-font-alt {
-	color: #ffffff;
-	font-family: trench;
-	font-size: 8em;
-}
-
-html, body {
-	height: 100%;
-	width: 100%;
-	background-image: url('../img/malibu.jpg'), url('../img/gradient-strip.png');
-	background-repeat: no-repeat, repeat-y;
-	background-position: center, left top;
-	background-size: cover, contain;
+	font-family: raleway;
+	src: url('../misc/Raleway-Regular.ttf');
 }
 
 body {
-	font-family: 'raleway', helvetica;
-	margin: 0px;
-	padding: 0px;
-}
-
-p {
-	text-align: left;
-	font-family: 'raleway', helvetica;
-	font-size: 1em;
-}
-
-#background-container {
-	background-image: url('../img/malibu.jpg');
+	background-image: url('../img/table.jpg');
 	background-repeat: no-repeat;
+	background-position: top;
 	background-size: cover;
-}
-
-#my-nav {
-	font-family: trench;
-	font-size: 4em;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	margin-bottom: 0;
-	background-color: rgba(34, 34, 34, 0.4);
-	border: 1px solid black;
-}
-
-#toolbar-list {
-	padding-top: 15px;
-}
-
-#toolbar-list > li {
+	font-family: raleway;
 	color: #ffffff;
-	margin: 0 5px 0 5px;
 }
 
-#name {
-	font-family: trench;
-	padding-left: 10px;
+.my-navbar-items {
+	list-style: none;
 }
 
-#name:hover {
-	text-decoration: none;
+#exit {
+	position: fixed;
+	left: 95vw;
+	top: 5vh;
+	max-width: 2vw;
+	max-height: 2vw;
+	overflow: hidden;
 }
 
-#splash {
-	min-height: 100vh;
-	border: 0px;
-}
-
-#pushdown {
-	margin-top: 25%;
-}
-
-#hello {
-	white-space: pre-wrap;
-	word-wrap: break-word;
-	color: #ffffff;
-	font-size: 2.5em;
-	font-family: menlo;
-}
-
-#splash-header {
-	font-size: 6em;
-}
-
-
-#scrolldown-button {
-	margin-top: 80%;
-	padding: 0 40% 0 40%;
+#exit img {
 	width: 100%;
+	height: 100%;
 }
 
-
-#about {
-	border: 0px;
-	color: #ffffff;
-	background: -webkit-linear-gradient(top, rgba(34,34,34,0), rgba(34,34,34,0.7)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom, rgba(34,34,34,0), rgba(34,34,34,0.7)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom, rgba(34,34,34,0), rgba(34,34,34,0.7)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom, rgba(34,34,34,0), rgba(34,34,34,0.7));
+#instructions {
+	position: absolute;
+	left: 12vw;
+	top: 23vh;
+	max-width: 12vw;
+	max-height: 12vw;
+	overflow: hidden;
+	margin: auto;
+	z-index: 99;
+	-webkit-transform: scale(1) rotate(-15deg);
+	-ms-transform: scale(1) rotate(-15deg);
+	-moz-transform: scale(1) rotate(-15deg);
+	-o-transform: scale(1) rotate(-15deg);
+    transform: scale(1) rotate(-15deg);
 }
 
-#about p {
-	text-align: justify;
-}
-
-#engineering {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#music {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#adventure {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#work {
-	background: -webkit-linear-gradient(top, rgba(34,34,34,0.7), rgba(34,34,34,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom, rgba(34,34,34,0.7), rgba(34,34,34,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom, rgba(34,34,34,0.7), rgba(34,34,34,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom, rgba(34,34,34,0.7), rgba(34,34,34,1));
-}
-
-#portfolio-header {
-	margin-top: 50px;
-	font-family: trench;
-}
-
-#resume-download:hover {
-	text-decoration: none;
-}
-
-#myCarousel {
+#instructions img {
 	width: 100%;
-	margin-bottom: 20px;
+	height: 100%;
 }
 
-.carousel-header {
-	font-size: 5em;
-	text-align: center;
-}
-
-.carousel-inner a:hover {
-	text-decoration: none;
-}
-
-.my-carousel-item {
+#notebook {
+	position: absolute;
+	left: 7vw;
+	top: 8vh;
+	max-width: 30vw;
+	max-height: 30vw;
+	overflow: hidden;
 	margin: auto;
-	width: 80%;
-	height: 75vh;
-	overflow: scroll;
-	border-radius: 5px;
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1) rotate(-25deg);
+	-ms-transform: scale(1) rotate(-25deg);
+	-moz-transform: scale(1) rotate(-25deg);
+	-o-transform: scale(1) rotate(-25deg);
+    transform: scale(1) rotate(-25deg);
 }
 
-.carousel-img {
+#notebook img {
+	width: 100%;
+	height: 100%;
+}
+
+#notebook:hover {
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#macbook {
+	position: absolute;
+	left: 30vw;
+	top: 10vh;
+	max-width: 40vw;
+	max-height: 32vw;
+	overflow: hidden;
 	margin: auto;
-	max-width: 100%;
-	vertical-align: middle;
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+    transform: scale(1);
 }
 
-.carousel-control.left, .carousel-control.right {
-	background: none !important;
+#macbook:hover {
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-.portfolio-exhibition {
+#macbook img {
+	width: 100%;
+	height: 100%;
+}
+
+#headphones {
+	position: absolute;
+	left: 70vw;
+	top: 10vh;
+	max-width: 15vw;
+	max-height: 20vw;
+	overflow: hidden;
+    transition-duration: 0.2s;
+	-webkit-transform: scale(1) rotate(30deg);
+	-ms-transform: scale(1) rotate(30deg);
+	-moz-transform: scale(1) rotate(30deg);
+	-o-transform: scale(1) rotate(30deg);
+    transform: scale(1) rotate(30deg);
+}
+
+#headphones:hover {
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#headphones img {
+	width: 100%;
+	height: 100%;
+}
+
+#phone {
+	position: absolute;
+	left: 60vw;
+	top: 72vh;
+	max-width: 12vw;
+	max-height: 18vw;
+	overflow: hidden;
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1) rotate(30deg);
+	-ms-transform: scale(1) rotate(30deg);
+	-moz-transform: scale(1) rotate(30deg);
+	-o-transform: scale(1) rotate(30deg);
+    transform: scale(1) rotate(30deg);
+}
+
+#phone:hover {
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#phone img {
+	width: 100%;
+	height: 100%;
+}
+
+#coffee {
+	position: absolute;
+	left: 10vw;
+	top: 65vh;
+	max-width: 15vw;
+	max-height: 15vw;
+	overflow: hidden;
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+    transform: scale(1);
+}
+
+#coffee:hover {
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#coffee img {
+	width: 100%;
+	height: 100%;
+}
+
+#photo {
+	position: absolute;
+	left: 75vw;
+	top: 50vh;
+	max-width: 10vw;
+	max-height: 14vw;
+	overflow: hidden;
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1) rotate(20deg);
+	-ms-transform: scale(1) rotate(20deg);
+	-moz-transform: scale(1) rotate(20deg);
+	-o-transform: scale(1) rotate(20deg);
+    transform: scale(1) rotate(20deg);	
+}
+
+
+#photo:hover {
+	transition-duration: 0.2s;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#photo img {
+	width: 100%;
+	height: 100%;
+}
+
+#layover {
+	position: absolute;
+	left: 0;
+	top: 0;
 	width: 100vw;
-	height: 75vh;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 999;
 }
 
-.portfolio-item {
-	margin: 0% 1% 1% 1%;
-	overflow-y: scroll;
-	border-radius: 2px;
+#headphones-text-body {
+	margin-left: 50vw;
+	margin-top: 10vh;
 }
 
-.portfolio-img {
-	margin: auto;
+#music-player {
+	margin-left: 10vw;
+	margin-top: 10vh;
+	width: 30vw;
+	height: 70vh;
+
+}
+
+#music-player iframe {
 	width: 100%;
 	height: 100%;
-	vertical-align: middle;
 }
 
-#item-1 {
-	height: 100%;
-	width: 25%;
-	float: left;
-}
-
-#item-2 {
-	margin-left: 0%;
-	margin-right: 0%;
-	height: 49%;
-	width: 46%;
-	float: left;
-}
-
-#item-3 {
-	height: 49%;
-	width: 25%;	
-	float: right;
-}
-
-#item-4 {
-	margin-left: 0%;
-	margin-right: 0%;
-	height: 49%;
-	width: 27%;
-	float: left;
-}
-
-#item-5 {
-	height: 49%;
-	width: 44%;
-	float: right;
-}
-
-#item-6 {
-	margin-right: 0%;
-	height: 49%;
-	width: 64%;
-	float: left;
-	background-color: #ffffff;
-}
-
-#item-7 {
-	height: 49%;
-	width: 33%;
-	float: right;
-	background-color: #ffffff;
-}
-
-#portfolio-footer:hover {
-	text-decoration: none;
-}
-
-#contact {	
-	color: #ffffff;
-	background-color: #222222;
-}
-
-footer {
-	line-height: 10vh;
-	padding-top: 5px;
-	background-color: rgb(34, 34, 34);
-	border: 1px solid #1f1f1f;
-	box-sizing: border-box;
-	clear: both;
-}
-
-footer a {
-	margin: auto;
-}
-
-footer a:hover {
-	text-decoration: none;
-}
-
-.typed-cursor{
-	color: #ffffff;
-	font-size: 2.5em;
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+#coffee-text-body {
+	margin-left: 5vw;
+	margin-top: 10vh;
 }

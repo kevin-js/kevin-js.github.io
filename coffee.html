@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Kevin Guh</title>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+  <div id="layover" class="main-content">
+    <div id="exit"><a id="exit-button" href=""><img src="static/img/exit.png"></a></div>
+    <div id="coffee-text-body">
+      <pre>
+        private class JavaJoke extends CSPun {
+          public static final String UNNECCESSARILY_VERBOSE_VARIABLE_DECLARATION_THAT_MAKES_ME_LOOK_LIKE_IM_YELLING_BECAUSE_JAVA_MAKES_ME_DO_IT = "sup";
+
+          public static void main(String[] args){
+            try {
+              System.out.println("Insert Java joke here: ");
+              Scanner inputScanner = new Scanner(System.in);
+
+              /*
+              note: I realize in actual Java I should check for hasNextLine()
+              first, I hope I'm better at software dev than jokes
+              */
+              String joke = inputScanner.nextLine();
+              System.out.println("haha");
+
+            } catch (JokeNotFunnyException e) {
+              System.err.println("...*facepalm* get out of here Kevin: " + e.dontGetMessage());
+            }
+          }
+        }
+      </pre>
+    </div>
+  </div>
+</body>
+</html>
