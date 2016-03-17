@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="static/css/inner-iphone.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+  		emailjs.init("user_EuYXZ1E9DGGhtAZtPgabm");
+		})();
+	</script>
+</div>
+<body>
+<div id="headline">
+	<div class="bar-item" id="cancel">Cancel</div>
+	<div class="bar-item" id="label"><b>Contact</b></div>
+	<div class="bar-item" id="submit">Done</div>
+</div>
+<hr />
+<div id="profile">
+	<div id="profile-left">
+		<img src="static/img/default-profile.jpeg">
+	</div>
+	<div id="profile-right">
+		<input class="info-field" type="text" id="firstname" placeholder="First name">
+		<input class="info-field" type="text" id="lastname" placeholder="Last name">
+		<input class="info-field" type="text" id="email" placeholder="Email">
+	</div>
+</div>
+<div id="message">
+	<div id="add-message">
+		<a href="#" onclick="showMessageBox(event);"><img src="static/img/add-button.png"></a>
+		<span style="color: #007aff;">add message</span>
+		<hr />
+	</div>
+	<div id="message-box">
+		<textarea id="message-box-content" placeholder="Message:">
+		</textarea>
+		<button onclick="sendMessage(event);">Send Message</button>
+	</div>
+</div>
+<div id="response">
+	<p>Thank you for your message!</p>
+	<p>I will get back to you ASAP. In the meanwhile, check out the other parts of my site!</p>
+</div>
+<script type="text/javascript">
+	function showMessageBox(event){
+		event.preventDefault();
+		$('#add-message').slideUp(300, function(){
+			$('#message-box').slideDown(600);
+		});
+	}
+
+	function validateMessage(errorMessage){
+		var errmsg = 'O darn, one of those sneaky popups again! To make it go away, please leave your first name (last name optional), email, and a message so I can get back to you ASAP :)';
+		if($('#firstname').val().indexOf(/^[a-z0-9]+$/) < 0 || $('#email').val().indexOf(/^[a-z0-9]+$/) < 0 || $('#message-box-content').val().indexOf(/^[a-z0-9]+$/) < 0){
+			errorMessage['message'] = errmsg;
+			return false;
+		}
+		return true;
+	}
+
+	function sendMessage(event){
+		event.preventDefault();
+		errorMessage = {};
+		if(validateMessage(errorMessage)){
+			$('#message-box').fadeOut(300, function(){
+				emailjs.send('gmail', 'template_KAhW89Uw', {'from_name': $('#firstname').val() + " " + $('#lastname').val(), 'from_email': $('#email').val(), 'message_content': $('#message-box-content').val()});
+				$('#response').fadeIn(300);
+			});
+		}else {
+			alert(errorMessage['message']);
+		}
+	}
+</script>
+</body>
+</html>

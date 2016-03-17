@@ -5,7 +5,7 @@
 
 body {
 	background-image: url('../img/table.jpg');
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-position: top;
 	background-size: cover;
 	font-family: raleway;
@@ -240,11 +240,13 @@ a {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.9);
 	z-index: 999;
+	background-repeat: repeat-y;
 }
 
 #headphones-text-body {
-	margin-left: 50vw;
+	margin-left: 10vw;
 	margin-top: 10vh;
+	display: inline-block;
 }
 
 #music-player {
@@ -252,7 +254,7 @@ a {
 	margin-top: 10vh;
 	width: 30vw;
 	height: 70vh;
-
+	display: inline-block;
 }
 
 #music-player iframe {

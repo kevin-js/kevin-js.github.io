@@ -16,6 +16,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.ajax({
 			url : '/macbook.html',
+			cache: false,
 			success : function(html){
 				$('body').append(html);
 			},
@@ -32,7 +33,16 @@ $(document).ready(function(){
 
 	$('#phone').click(function(e){
 		e.preventDefault();
-		$('body').append(pages['phone']);
+		$.ajax({
+			url : '/phone.html',
+			cache : false,
+			success : function(html){
+				$('body').append(html);
+			},
+			error : function(error){
+				$('body').append('<div id="layover" class="main-content"><h1>Oops! Looks like something went wrong -- please try again!</h1><div id="exit"><a id="exit-button" href=""><img src="static/img/exit.png"></a></div></div>');
+			}
+		})
 	})
 
 	$('#coffee').click(function(e){
