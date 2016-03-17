@@ -97,6 +97,7 @@ $(function() {
     source: availableTags
   });
 });
+/*
 $('#search').keydown(function(event){
   if(event.which == 13){
     var searchText = $('#search').val();
@@ -104,11 +105,12 @@ $('#search').keydown(function(event){
     
     for(var i = 0; i < results.length; i++){
       // test if search query is a substring of current div
-      if(results[i].id.indexOf(searchText) > -1 && searchText != '')
+      if(results[i].id.indexOf(searchText) < -1 && searchText != '')
         $('#' + results[i].id).css('display', 'none');
       else if(searchText == '')
         $('#' + results[i].id.css('display', 'block'));
     }
   }
 });
+*/
 </script>
