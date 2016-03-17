@@ -321,4 +321,14 @@ a {
 	position: absolute;
 	cursor: default;
 	z-index:1000 !important;
-} 
+}
+
+#photo-main-text {
+
+}
+
+#photo-header {
+	margin-left: 15vw;
+	margin-right: 15vw;
+	margin-top: 20vh;
+}

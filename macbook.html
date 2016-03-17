@@ -82,7 +82,7 @@
   </div>
 </div>
 <script type="text/javascript">
-  $(function() {
+$(function() {
   var availableTags = [
     'Sophist',
     'MoodifAI',
@@ -96,5 +96,19 @@
   $('#search').autocomplete({
     source: availableTags
   });
+});
+$('#search').keydown(function(event){
+  if(event.which == 13){
+    var searchText = $('#search').val();
+    var results = document.getElementsByClassName('my-project');
+    
+    for(var i = 0; i < results.length; i++){
+      // test if search query is a substring of current div
+      if(results[i].id.indexOf(searchText) > -1 && searchText != '')
+        $('#' + results[i].id).css('display', 'none');
+      else if(searchText == '')
+        $('#' + results[i].id.css('display', 'block'));
+    }
+  }
 });
 </script>
