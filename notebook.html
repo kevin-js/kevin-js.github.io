@@ -15,6 +15,7 @@
   <meta property="og:url" content="http://kevinguh.me/">
   <title>Kevin Guh</title>
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/notebook.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
@@ -25,8 +26,26 @@
   </nav>
   <div id="layover" class="main-content">
     <div id="exit"><a id="exit-button" href=""><img src="static/img/exit.png"></a></div>
-    <div>
+    <div class="notebook">
+      <div class="page-right" id="notebook-cover">
+        <img src="static/img/notebook-cover.png">
+      </div>
+      <div class="page-right paper-right" id="first-page" style="display: none;">
+        <div class="paper">
+        </div>
+      </div>
+    </div>
+    <div id="next">
+      <img onclick="nextPage(event)" src="static/img/scroll_down.png">
     </div>
   </div>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
+  <script type="text/javascript">
+    function nextPage(event){
+      event.preventDefault();
+      $('#first-page').css('display', 'inline');
+      $('#notebook-cover').flip({axis: 'y'});
+    }
+  </script>
 </body>
 </html>
