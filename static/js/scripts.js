@@ -67,7 +67,7 @@ $(document).ready(function(){
 
 	$('#exit-button').click(function(e){
 		e.preventDefault();
-		$('body').remove('#layover');
+		$('#layover').remove();
 	})
 });
 
