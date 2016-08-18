@@ -12,6 +12,10 @@ body {
 	color: #ffffff;
 }
 
+h1 {
+	font-size: 3em;
+}
+
 a {
 	text-decoration: none;
 	color: #b70b6f;
